@@ -1,0 +1,18 @@
+.slider-wrapper{
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.slider-wrapper::-webkit-scrollbar{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.slider-wrapper.slide{
+   background: red;
+}

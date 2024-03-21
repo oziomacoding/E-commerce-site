@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+.col-md-4 {
+  border-inline-style: solid;
+  border-right: 0px;
+  border-inline-color: #d3d3d3;
+
+}
+
+
+
+
+.text-warning {
+  color: #EA9E3A !important;
+}
+/* bootstrap carousel begins*/
+
+.carousel-indicators .rounded {
+  border-radius: 100px;
+  width: 12px;
+  height: 12px;
+
+}
+
+.carousel-indicators .active {
+  background-color: #49A62C;
+
+}
+
+.bar-icons {
+  color: white;
+  font-size: 25px;
+  padding: 30px;
+  background: transparent;
+  border-radius: 50%;
+  border-color: red;
+  border: 4px;
+  outline-style: solid;
+  
+
+  width: 100px;
+  height: 100px;
+
+}
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+@media (max-width: 767px){
+  .carousel-caption{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 14px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: auto;
+    
+  }
+  .carousel-caption h3{
+    font-size: 14px;
+  }
+  .carousel-caption p {
+    font-size: 5px;
+  }
+  .carousel-caption button {
+    /* display: inline-block; */
+    font-size: 5px !important;
+    
+  }
+
+
+  .carousel-item{
+    max-height: 150px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  display: block;
+}
+}
+/* bootstrap carousel ends here */
+
+
+.hero{
+  background: url('../src/assets/Rectangle4.png');
+  height: 285px
+}
+h3{
+  font-size: 32px;
+  font-weight: 600;
+}
+.btn-success{
+  background-color: #49A62C !important;
+  
+}
+.text-success{
+  color: #49A62C !important; 
+}
+
+
+
+
+
+
+
+
+
