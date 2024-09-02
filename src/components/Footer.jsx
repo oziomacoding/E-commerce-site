@@ -6,8 +6,8 @@ import Googleplay1 from '../assets/google-play1.png'
 function Footer() {
   return (
     <>
-      <div className="container">
-        <div className="row">
+      <div className="container pt-5">
+        <div className="row" style={{ textAlign: 'center' }}>
           <div className="col-md-3">
             <a className="navbar-brand" href="/"><img src={Logo} alt="Logo"
               srcSet="" /></a>
@@ -18,7 +18,7 @@ function Footer() {
           </div>
 
           <div className="col-md-3">
-            <p className='fw-bold mt-5 mb-5'>Quick Links</p>
+            <p className='fw-bold mt-3 mb-3'>Quick Links</p>
             <p>Services</p>
             <p>About Us</p>
             <p>Latest Food</p>
@@ -26,7 +26,7 @@ function Footer() {
           </div>
 
           <div className="col-md-3">
-            <p className='fw-bold mt-5 mb-5'>Address</p>
+            <p className='fw-bold mt-3 mb-3'>Address</p>
             <p>570 8th Ave, New York, NY 10018
               United States</p>
             <p className='fw-bold'> Hours:</p>
@@ -35,7 +35,7 @@ function Footer() {
           </div>
 
           <div className="col-md-3">
-            <p className='fw-bold mt-5 mb-5'>Install App</p>
+            <p className='fw-bold mt-3 mb-3'>Install App</p>
             <p>FROM APP STORE OR GOOGLE PLAY</p>
             <img src={Appstore1} className="me-3" alt="" />
             <img src={Googleplay1} className="" alt="" />

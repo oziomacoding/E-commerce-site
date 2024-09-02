@@ -1,0 +1,20 @@
+#multiItemCarousel .prev-icon,
+#multiItemCarousel .next-icon {
+    border: 2px solid#49A62C; /* White outline */
+    border-radius: 50%;
+    padding: 10px !important; /* Space around the circle */
+    /* Aligns it at the top */
+    align-self: flex-start;  /*and remember to add padding to carousel image*/
+}
+/* Aligns next to eachother */
+#multiItemCarousel .carousel-control-prev{
+  left: unset;
+  right: 70px;
+} 
+#multiItemCarousel .next-icon{
+    background-color:#49A62C; 
+}
+#multiItemCarousel .prev-icon{
+    color: #49A62C;
+    background-color: transparent; /* No background color */
+}

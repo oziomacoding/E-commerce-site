@@ -4,17 +4,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
-
-.col-md-4 {
-  border-inline-style: solid;
-  border-right: 0px;
-  border-inline-color: #d3d3d3;
-
+/* * {
+  outline: 1px solid red;
 }
+ */
 
-
+.slatch::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px; /* Thickness of the line */
+    background-color: #b0b0b0; 
+    width: 100%; /* Full container width */
+    margin-left: 0; /* Remove centering adjustment */
+  }
+  
 
 
 .text-warning {
@@ -22,79 +28,94 @@ body {
 }
 /* bootstrap carousel begins*/
 
-.carousel-indicators .rounded {
-  border-radius: 100px;
-  width: 12px;
-  height: 12px;
+#carouselExampleIndicators .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%; /* Ensures the caption spans the full width */
+  left: 0; /* Aligns it to the left side */
+  padding-left: 20%; /* Adjust as necessary to create the right amount of space */
+  padding-right: 20%; /* Adjust as necessary to create the right amount of space */
+}
+
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+  border: 2px solid rgb(255, 255, 255); /* White outline */
+  border-radius: 50%;
+  padding: 30px !important; /* Space around the circle */
+  background-color: transparent; /* No background color */
+ 
 
 }
 
-.carousel-indicators .active {
+#carouselExampleIndicators .carousel-indicators .active {
   background-color: #49A62C;
 
 }
-
-.bar-icons {
+.card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card:hover{
+  background-color: #FFA500;
   color: white;
-  font-size: 25px;
-  padding: 30px;
-  background: transparent;
-  border-radius: 50%;
-  border-color: red;
-  border: 4px;
-  outline-style: solid;
+  outline: white;
+}
+.card:hover .bg-yellow {
+  background-color: #FFFFFF !important; /* White color */
+}
+
+@media (max-width: 1200px) { 
+  .card{
+    width: 18rem !important;
+  }
+}
+
+@media (max-width: 992px) { 
+  .top-lg-30 {
+    top: 35% !important;
+  }
+  .card{
+    width: 12rem !important;
+  }
+}
+
+@media (max-width: 576px) { 
+ 
+  .card{
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 767px) { 
+  h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+p{
+  font-size: small;
+} 
+#carouselExampleIndicators .carousel-item {
+  height: 300px; /* Adjust this value as needed */
+}
+#carouselExampleIndicators .carousel-item img {
+  height: 100%; /* Make the image take up the full height of the carousel item */
+  width: 100%; /* Ensure the image takes up the full width as well */
+  object-fit: cover; /* Scale the image to cover the entire area without distortion */
+}
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+  padding: 20px !important; /* Space around the circle */
   
-
-  width: 100px;
-  height: 100px;
-
-}
-.carousel-caption{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   
 }
-
-@media (max-width: 767px){
-  .carousel-caption{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 80%;
-    padding: 0px;
-    margin: 0 auto;
-    font-size: 14px !important;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    width: auto;
-    
-  }
-  .carousel-caption h3{
-    font-size: 14px;
-  }
-  .carousel-caption p {
-    font-size: 5px;
-  }
-  .carousel-caption button {
-    /* display: inline-block; */
-    font-size: 5px !important;
-    
-  }
-
-
-  .carousel-item{
-    max-height: 150px;
+#carouselExampleIndicators .carousel-caption{
+  padding-left: 15%;
+  padding-right: 15%; 
 }
-.carousel-control-prev,
-.carousel-control-next{
-  display: block;
-}
-}
+
+} 
+
 /* bootstrap carousel ends here */
 
 
@@ -114,6 +135,13 @@ h3{
   color: #49A62C !important; 
 }
 
+.bg-yellow{
+  background-color: #EA9E3A !important;
+  width: 80px;
+  height: 3px;
+  border-radius: 8px;
+  /* margin: 0 auto; */
+}
 
 
 

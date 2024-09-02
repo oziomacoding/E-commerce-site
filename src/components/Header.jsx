@@ -7,47 +7,43 @@ import cart from '../assets/cart.png'
 function Header() {
     return (
         <>
-            <div className="hstack gap-3 " style={{ minHeight: '2px', borderBottom: '1px solid #333' }}>
-                <div className="p-2">
-                    <p className='mt-3' ><span className='text-success fw-bold'style={{ paddingLeft: '80px' }}>100%</span> secure delivery </p>
-                </div>
-                <div className="vr "></div>
-                <div className="p-2 "> <span className="" >
-                    <a href="" className='text-decoration-none text-dark' />
-                    <i className=" fa fa-solid fa-magnifying-glass" ></i> &nbsp;
-                </span>Search</div>
-               
-
-                <div className="p-2 ms-auto"><div className="">
-                    <a href="tel:09137029216" className='text-decoration-none text-dark'>
-
-
-
-                        <span className="ms-3">
-                            <i className="fa fa-phone"></i>
-                        </span>
-                        08167000077
-                    </a>
-
-                    <a href="https://wa.me/+2349137029216" className='text-decoration-none text-dark'>
-                        <span className="ms-3">
-                            <img src={facebook} alt="" />
-                        </span>
-                        Taste_heaven
-                    </a>
-
-                    <a href="https://wa.me/+2349137029216" className='text-decoration-none text-dark'>
-                        <span className="ms-4">
-                            <img src={instagram} alt="" />
-                        </span>
-                        Taste_heaven
-                    </a>
-                </div></div>
-
-
-
+        <div className=" slatch position-relative " >
+    <div className="hstack gap-5" >
+        <div className=" ">
+            <p className=' mb-0 text-center text-md-start'>
+                <span className='text-success fw-bold' style={{ paddingLeft: '60px' }}>100%</span> secure delivery
+            </p>
+        </div>
+        <div className="vr d-none d-md-block"></div>
+        <div className="p-2 flex-grow-1 text-center text-md-start">
+            <span>
+                <a href="#" className='text-decoration-none text-dark'>
+                    <i className="fa fa-solid fa-magnifying-glass"></i> &nbsp;
+                </a>
+                Search
+            </span>
+        </div>
+        <div className="p-2 ms-auto d-none d-lg-block">
+            <div className="d-flex justify-content-center justify-content-md-end">
+                <a href="tel:09137029216" className='text-decoration-none text-dark me-3'>
+                    <i className="fa fa-phone"></i>
+                    08167000077
+                </a>
+                <a href="https://wa.me/+2349137029216" className='text-decoration-none text-dark me-3'>
+                    <img src={facebook} alt="Facebook" />
+                    Taste_heaven
+                </a>
+                <a href="https://wa.me/+2349137029216" className='text-decoration-none text-dark'>
+                    <img src={instagram} alt="Instagram" />
+                    Taste_heaven
+                </a>
             </div>
-            
+        </div>
+    </div>
+
+</div>
+
+
 
 
             <nav className="navbar navbar-expand-lg ">
@@ -73,8 +69,7 @@ function Header() {
 
                             <a href="" className="btn btn-success">Login </a>
 
-                            {/* <button className='btn btn-outline-success'>Login</button> &nbsp; &nbsp;
-                            <button className='btn btn-success '>Login</button> */}
+                            
                         </div>
 
 

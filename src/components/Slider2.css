@@ -1,0 +1,50 @@
+#carouselExample .prev-icon,
+#carouselExample .next-icon {
+    border: 2px solid#49A62C; /* White outline */
+    border-radius: 50%;
+    padding: 10px !important; /* Space around the circle */
+    /* Aligns it at the top */
+    align-self: flex-start;  /*and remember to add padding to carousel image*/
+}
+/* Aligns next to eachother */
+#carouselExample .carousel-control-prev{
+  left: unset;
+  right: 70px;
+} 
+#carouselExample .next-icon{
+    background-color:#49A62C; 
+}
+#carouselExample .prev-icon{
+    color: #49A62C;
+    background-color: transparent; /* No background color */
+}
+
+.card-icon {
+    color: white;
+    
+    width: 30px;
+    height: 30px;
+    background: black;
+    
+    align-items: center;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 6px;
+   
+   
+    
+    
+
+  }
+  .add-to-cart-btn {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+  
+  /* Show the button when hovering over the card */
+  .card:hover .add-to-cart-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+ 
